@@ -82,5 +82,5 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.config.ringtone=The_big_adventure.ogg \
-   ro.config.notification_sound=Duet.ogg \
+   ro.config.notification_sound=Popcorn.ogg \
    ro.config.alarm_alert=Sunshower.ogg

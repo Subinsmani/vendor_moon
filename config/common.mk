@@ -88,9 +88,16 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-# AudioFX
+# MusicFX
+ifeq ($(WITH_MUSICFX),true)
 PRODUCT_PACKAGES += \
-    AudioFX
+    MusicFX \
+    audio_effects.conf \
+    libcyanogen-dsp
+else
+$(warning MusicFX is undefined, please use 'WITH_MUSICFX := true' to make a build with MusicFX.' NOTE:remove audio_effects.conf from device tree')
+endif
+
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
