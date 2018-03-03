@@ -1,3 +1,3 @@
-. "$(gettop)/vendor/gzosp/build/envsetup.sh"
+. "$(gettop)/vendor/moon/build/envsetup.sh"
 
-gzosp_device_combos
+moon_device_combos
