@@ -150,6 +150,7 @@ $(call inherit-product, vendor/moon/config/bootanimation.mk)
 # Versioning System
 # mosp first version.
 MOON_VERSION_NUMBER := v1.0
+MOSP_VERSION  := 1.0 - Popsicle
 
 MOON_DEVICE := $(MOON_BUILD)
 
@@ -175,8 +176,9 @@ MOON_VERSION := MoonOS_$(MOON_DEVICE)-$(shell date +"%Y%m%d")-$(MOON_VERSION_NUM
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
-    moon.ota.version=$(MOSP_VERSION) \
-    ro.moon.version=$(MOSP_VERSION)
+    moon.ota.version=$(MOON_VERSION) \
+    ro.moon.version=$(MOON_VERSION) \
+    ro.mosp.version=$(MOSP_VERSION)
 
 # Google sounds
 include vendor/moon/google/GoogleAudio.mk
