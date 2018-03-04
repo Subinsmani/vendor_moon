@@ -150,7 +150,7 @@ $(call inherit-product, vendor/moon/config/bootanimation.mk)
 # Versioning System
 # mosp first version.
 MOON_VERSION_NUMBER := v1.0
-MOON_VERSION_NAME  := 1.0 - Popsicle
+MOON_VERSION_NAME  := 1.0-Popsicle
 
 MOON_DEVICE := $(MOON_BUILD)
 
