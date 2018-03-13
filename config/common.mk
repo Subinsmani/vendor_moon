@@ -150,7 +150,7 @@ $(call inherit-product, vendor/moon/config/bootanimation.mk)
 # Versioning System
 # mosp first version.
 MOON_VERSION_NUMBER := v1.0
-MOON_VERSION_NAME  := 1.0-Popsicle
+MOON_VERSION_NAME  := aosmp-$(MOON_DEVICE)-$(shell date +"%Y%m%d")-$(MOON_VERSION_NUMBER)-$(MOON_BUILD_TYPE)
 
 MOON_DEVICE := $(MOON_BUILD)
 
@@ -172,7 +172,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 endif
 
 # Set all versions
-MOON_VERSION := MoonOS_$(MOON_DEVICE)-$(shell date +"%Y%m%d")-$(MOON_VERSION_NUMBER)-$(MOON_BUILD_TYPE)
+MOON_VERSION := aosmp-$(MOON_DEVICE)-$(shell date +"%Y%m%d")-$(MOON_VERSION_NUMBER)-$(MOON_BUILD_TYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
