@@ -165,8 +165,7 @@ MOON_VERSION := aosmp-$(MOON_DEVICE)-$(shell date +"%Y%m%d")-$(MOON_VERSION_NUMB
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     moon.ota.version=$(MOON_VERSION) \
-    ro.moon.version=$(MOON_VERSION) \
-    ro.moon.version.name=$(MOON_VERSION_NAME)
+    ro.moon.version=$(MOON_VERSION)
 
 # Google sounds
 include vendor/moon/google/GoogleAudio.mk
