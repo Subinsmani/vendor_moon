@@ -88,17 +88,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-# MusicFX
-ifeq ($(WITH_MUSICFX),true)
-PRODUCT_PACKAGES += \
-    MusicFX \
-    audio_effects.conf \
-    libcyanogen-dsp
-else
-$(warning MusicFX is undefined, please use 'WITH_MUSICFX := true' to make a build with MusicFX.' NOTE:remove audio_effects.conf from device tree')
-endif
-
-
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
@@ -150,7 +139,6 @@ $(call inherit-product, vendor/moon/config/bootanimation.mk)
 # Versioning System
 # mosp first version.
 MOON_VERSION_NUMBER := v1.0
-MOON_VERSION_NAME  := aosmp-$(MOON_DEVICE)-$(shell date +"%Y%m%d")-$(MOON_VERSION_NUMBER)-$(MOON_BUILD_TYPE)
 
 MOON_DEVICE := $(MOON_BUILD)
 
